@@ -1,0 +1,31 @@
+{
+  "name": "web-hook",
+  "version": "1.0.0",
+  "description": "在项目更新的时候能够自动拉取最新代码并更新",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "pm2 startOrRestart ./deploy/ecosystem-pro.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/returnGirl/web-hook.git"
+  },
+  "keywords": [
+    "web-hook",
+    "pm2"
+  ],
+  "author": "王镇佳",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/returnGirl/web-hook/issues"
+  },
+  "homepage": "https://github.com/returnGirl/web-hook#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "method-override": "^2.3.7"
+  }
+}
