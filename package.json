@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node server.js",
-    "start": "pm2 startOrRestart ./deploy/ecosystem-pro.js"
+    "start": "pm2 startOrRestart ./deploy/ecosystem-pro.json"
   },
   "repository": {
     "type": "git",
