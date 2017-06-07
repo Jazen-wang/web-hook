@@ -55,6 +55,7 @@ function execGitPullCommand(res, repository, branch) {
     case 'Raneto-master': command = `cd ~/www/Raneto && git pull origin master && npm install`; break;
     default: {
       console.log('Webhook监听失败: 没有对应的仓库或分支');
+
       res.status(400)
         .end('Webhook监听失败: 没有对应的仓库或分支');
       return;
@@ -72,6 +73,7 @@ function execCommand(res, command) {
   exec(command, (error, stdout, stderr) => {
     if (error) {
       console.error('命令执行失败: ' + command + '\n');
+      console.log(error);
       return;
     }
     console.log('命令执行成功: ' + command + '\n');
