@@ -53,6 +53,7 @@ function execGitPullCommand(res, repository, branch) {
   let command = '';
   switch (RB) {
     case 'Raneto-master': command = `cd /home/ubuntu/www/Raneto && git pull origin master`; break;
+    case 'docs-master': command = `cd /home/ubuntu/www/docs && git pull origin master`; break;
     default: {
       console.log('Webhook监听失败: 没有对应的仓库或分支');
 
